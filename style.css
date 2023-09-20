@@ -137,7 +137,7 @@ nav .right-side #nav-btn,
  border-radius: 1rem;
  box-shadow: 0 2rem 2rem black;
  display: none;
- z-index: 200;
+ z-index: 20;
 }
 .pop-up::before{
   content: "";
@@ -223,6 +223,7 @@ nav .right-side #nav-btn,
   padding: 0.5rem;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 .middle-data .stories .story::before{
   content: "";
@@ -414,7 +415,7 @@ nav .right-side #nav-btn,
   height: 0.8rem;
   border-radius: 50%;
   border: 3px solid white;
-  background: greenyellow;
+  background: rgb(30, 199, 61);
   position: absolute;
   right: 0;
   bottom: 8px;
@@ -482,3 +483,4 @@ border-color: gray;
 .request-list .people-name{
   margin-left: 1.5rem;
 }
+

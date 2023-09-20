@@ -1,5 +1,4 @@
 const menuItems = document.querySelectorAll(".menu-items");
-
 // remove active
 
 const changeActiveItem = ()=>{
@@ -22,3 +21,35 @@ menuItems.forEach(item =>{
         }
     })
 })
+
+
+// --------message------------
+
+const msg = document.querySelector('.messages');
+const shadow = document.querySelector('#shadow-box');
+msg.style.boxShadow = "0px 0px 0px";
+menuItems.forEach(item=>{
+   item.addEventListener('click',()=>{
+    if (item.id === "shadow-box") {
+            msg.style.boxShadow = "-10px 10px 20px black";
+    }
+    else{
+        msg.style.boxShadow = "0px 0px 0px";
+    }
+    document.querySelector('.msg-count').style.display = "none";
+   })
+})
+
+
+
+
+// shadow.addEventListener('click',()=>{
+//     if( msg.style.boxShadow === "0px 0px 0px"){
+//         msg.style.boxShadow = "-10px 10px 20px black";
+//     }
+//     else{
+//         msg.style.boxShadow = "0px 0px 0px";
+
+//     }
+   
+// })
