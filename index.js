@@ -17,6 +17,7 @@ menuItems.forEach(item =>{
         }
         else{
             document.querySelector('.pop-up').style.display = "block";
+            document.querySelector('.pop-up').style.transition = "all 400ms ease";
             document.querySelector('.notify-count').style.display = "none";
         }
     })
@@ -32,6 +33,7 @@ menuItems.forEach(item=>{
    item.addEventListener('click',()=>{
     if (item.id === "shadow-box") {
             msg.style.boxShadow = "-10px 10px 20px black";
+            msg.style.transition = "all 400ms ease"
     }
     else{
         msg.style.boxShadow = "0px 0px 0px";
@@ -41,15 +43,14 @@ menuItems.forEach(item=>{
 })
 
 
+// ----------theme-----------
 
+    document.querySelector("#theme-menu").
+    addEventListener('click',()=>{
+    document.querySelector(".customize-themes").style.display = "Block";
+});
+    document.querySelector("#close-btn").addEventListener('click',()=>{
+    document.querySelector(".customize-themes").style.display = "none";
 
-// shadow.addEventListener('click',()=>{
-//     if( msg.style.boxShadow === "0px 0px 0px"){
-//         msg.style.boxShadow = "-10px 10px 20px black";
-//     }
-//     else{
-//         msg.style.boxShadow = "0px 0px 0px";
-
-//     }
-   
-// })
+})
+    Document.querySelector(".card").style.margin = "auto";
